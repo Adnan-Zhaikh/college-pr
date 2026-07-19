@@ -1,6 +1,4 @@
-package practical;
-
-public class ex2 {
+public class nullpointerExc {
     public static void main(String[] args) {
         String s = null;
         try {
