@@ -1,17 +1,19 @@
+//Method Overriding 
+
 class Animal {
     void makeSound(){
         System.out.println("Animal Makes sound a lot!");
     }
 }
 
-class dog extends Animal{
+class Dog extends Animal{
     @Override
     void makeSound(){
         System.out.println("Dog: Barks!");
     }
 }
 
-class cat extends Animal{
+class Cat extends Animal{
     @Override
     void makeSound(){
         System.out.println("Cat: Meow! Meow!");
@@ -19,8 +21,8 @@ class cat extends Animal{
 }
 public class zoo{
     public static void main(String[] args){
-        Animal d = new dog();
-        Animal c = new cat();
+        Animal d = new Dog();
+        Animal c = new Cat();
         d.makeSound();
         c.makeSound();
     }
