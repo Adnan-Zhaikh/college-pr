@@ -1,4 +1,4 @@
-    class MilkHouse{
+    class waitNotifyDemo{
     boolean milkAvailable = false;
     synchronized void waitForMilk(){
         System.out.println("customer:Waiting for milk");
@@ -17,15 +17,16 @@
                 notify();
             }
     }
-            public class WaitNotifyDemo{
-                public static void main(String args[]){
-                   MilkHouse shop = new MilkHouse();
-                   Thread t1=new Thread(() ->shop.waitForMilk());
-                   Thread t2=new Thread(()->{
-                   try{
-                       Thread.sleep(1000);
-                   }catch(Exception e){}        
-                          shop.deliverMilk();
+
+public class WaitNotifyDemo{
+    public static void main(String args[]){
+       waitNotifyDemo shop = new waitNotifyDemo();
+       Thread t1=new Thread(() ->shop.waitForMilk());
+       Thread t2=new Thread(()->{
+       try{
+           Thread.sleep(1000);
+       }catch(Exception e){}        
+              shop.deliverMilk();
     });
     t1.start();
     t2.start();
