@@ -123,6 +123,29 @@ public class P5 extends JFrame implements ActionListener {
         main_frame.add(saddress);
         main_frame.add(sskills);
 
+        main_frame.add(male);
+        main_frame.add(female);
+
+        main_frame.add(lschool);
+        main_frame.add(lsy);
+        main_frame.add(lsa);
+
+        main_frame.add(sschool);
+        main_frame.add(ssy);
+        main_frame.add(ssa);
+
+        main_frame.add(ljcollege);
+        main_frame.add(ljcy);
+        main_frame.add(ljca);
+        
+        main_frame.add(sjcollege);
+        main_frame.add(sjcy);
+        main_frame.add(sjca);
+        
+        main_frame.add(sscollege);
+        main_frame.add(sscy);
+
+
         
     }
 }
