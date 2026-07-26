@@ -17,6 +17,7 @@ class Bank {
         open = true;
         notifyAll();
     }
+}
     public class BankApp {
         public static void main(String[] args){
             Bank bank = new Bank();
@@ -37,4 +38,4 @@ class Bank {
             }).start();
         }
     }
-}
+

@@ -7,8 +7,9 @@ def print_cube(num):
 
 def print_square(num):
     print("Square: {}" .format(num * num))
-    if __name__ == "_main_":
-        print("Done!")
+    
+if __name__ == "__main__":
+    print("Done!")
 
 t1 = threading.Thread(target=print_cube, args=(13,))
 t2 = threading.Thread(target=print_square, args=(12,))
