@@ -8,5 +8,4 @@ public class ArrayindexExc {
             System.out.println("Invalid index access");
         }
     }
-    
 }
