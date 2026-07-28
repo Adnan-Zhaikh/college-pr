@@ -1,3 +1,4 @@
+package partB;
 import javax.swing.*;
 import java.awt.event.*;
 
@@ -6,7 +7,7 @@ public class WindowAdapterEx {
         JFrame frame = new JFrame("WindowAdapter Demo");
         frame.setSize(300,200);
 
-        frame.addWindowFocusListener(new WindowAdapter() {
+        frame.addWindowListener(new WindowAdapter() {
             public void windowClosing(WindowEvent e) {
                 int confirm = JOptionPane.showConfirmDialog(frame, 
                     "Are you sure you want to exit?",

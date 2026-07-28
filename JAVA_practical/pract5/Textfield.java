@@ -1,5 +1,3 @@
-package JAVA_practical.pract5;
-
 import javax.swing.JFrame;
 import javax.swing.JTextField;
 import java.awt.*;

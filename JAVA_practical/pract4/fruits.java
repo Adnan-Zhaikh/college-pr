@@ -11,7 +11,7 @@ public class fruits {
         int n = sc.nextInt();
         sc.nextLine();
 
-        for(int i = 0; i <= n; i++){
+        for(int i =1; i <= n; i++){
             System.out.println("Enter fruit " + i + ":");
             String fruit = sc.nextLine();
             fruits.add(fruit);
@@ -21,5 +21,7 @@ public class fruits {
         for( String fruit : fruits){
             System.out.println(fruit);
         }
+
+        sc.close();
     }
 }

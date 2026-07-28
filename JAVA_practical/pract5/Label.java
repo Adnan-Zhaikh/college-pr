@@ -1,4 +1,3 @@
-package JAVA_practical.pract5;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 

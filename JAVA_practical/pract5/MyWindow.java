@@ -1,5 +1,3 @@
-package JAVA_practical.pract5;
-
 import javax.swing.*;
 
 public class MyWindow {
@@ -7,7 +5,6 @@ public class MyWindow {
         //Create a window
         JFrame frame = new JFrame("My first Window");
         
-
         frame.setSize(400, 300);
         
         //Close the app when X is clicked
@@ -15,7 +12,6 @@ public class MyWindow {
         
         // Show the window
         frame.setVisible(true
-            
         );
     }
 }

@@ -12,7 +12,6 @@ public class BorderLayoutExamnple {
         JPanel panel = new JPanel();
         panel.setLayout(new BorderLayout(10, 10)); // Horizontal and vertical
 
-
         // Add components to all regions
         panel.add(new JButton("North (Top)"), BorderLayout.NORTH);
         panel.add(new JButton("South (Buttom)"), BorderLayout.SOUTH);
@@ -21,6 +20,5 @@ public class BorderLayoutExamnple {
         panel.add(new JButton("Centre (Main Area)"), BorderLayout.CENTER);
         frame.add(panel);
         frame.setVisible(true);
-
     }
 }

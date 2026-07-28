@@ -1,4 +1,3 @@
-package JAVA_practical.pract5;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 

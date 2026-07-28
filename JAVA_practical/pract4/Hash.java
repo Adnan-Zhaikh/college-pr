@@ -4,9 +4,9 @@ import java.util.*;
 public class Hash {
     public static void main(String[] args) {
         Set<String> names = new HashSet<>();
-        names.add("Adnan");
-        names.add("Bilal");
-        names.add("Raza");
+        names.add("Farhan");
+        names.add("Gyani");
+        names.add("Nitin");
     
 
     for (String name : names){
