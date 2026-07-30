@@ -120,7 +120,18 @@ public class Main extends JFrame implements ActionListener{
     public void actionPerformed(ActionEvent e){
         for(int i = 0; i < 10; i++) {
             if (e.getSource() == numberButtons[i]) {
-                
+                textField.setText(textField.getText().concat(String.valueOf(i)));
+            }
+        }
+
+        if (e.getSource() == clrButton) {
+            textField.setText("");
+            
+        }
+        if ( e.getSource() == backspaceButton) {
+            String currentText = textField.getText();
+            if (currentText.length() > 0) {
+                textField.setText(currentText.substring(0,currentText.length() - 1));                
             }
         }
     }
