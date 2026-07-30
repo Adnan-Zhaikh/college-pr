@@ -155,6 +155,33 @@ public class Main extends JFrame implements ActionListener{
             operator = '/';
             textField.setText("");
         }
+
+        if (e.getSource() == eqButton) {
+            num2 = Double.parseDouble(textField.getText());
+
+            switch (operator) {
+                case '+':
+                    result = num1 + num2;                    
+                    break;
+                case '-':
+                    result = num1 - num2;                    
+                    break;
+                case '*':
+                    result = num1 * num2;                    
+                    break;
+                case '/':
+                    if (num2 != 0) {
+                        result = num1 / num2; 
+                    } else {
+                        result = Double.POSITIVE_INFINITY;
+                    }
+                    break;
+                
+            }
+
+            textField.setText(String.valueOf(result));
+            num1 = result;
+        }
     }
 
 }
