@@ -1,3 +1,5 @@
+#Aim: Write a program that implements FCFS scheduling algorithm
+
 def findWaitingTime(processes, n, bt, wt):
     wt[0] = 0  #first process wt time
     for i in range(1, n ):
