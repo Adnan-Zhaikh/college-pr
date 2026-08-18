@@ -10,6 +10,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+@WebServlet("/first")
 public class FirstServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest request,
