@@ -1,0 +1,19 @@
+import jakarta.servlet.*;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.*;
+import java.io.*;
+
+@WebServlet("/check")
+public class AgeCheckServlet extends HttpServlet {
+    protected void doPost(HttpServletRequest req, HttpServletResponse res)
+            throws ServletException, IOException {
+
+        int age = Integer.parseInt(req.getParameter("age"));
+
+        if (age >= 18) {
+            res.sendRedirect("welcome");
+        } else {
+            res.sendRedirect("blocked");
+        }
+    }
+}
