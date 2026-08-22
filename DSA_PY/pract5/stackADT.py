@@ -39,6 +39,46 @@ print("After Pop:")
 st.display()
 print()
 
+# @title
+print("---------------- Delimiter Matching ----------------")
+
+s = "{[()()]}"
+
+st = Stack()
+
+for ch in s:
+
+    if ch in "{[(":
+        st.push(ch)
+
+    else:
+
+        if st.isEmpty():
+            print("Not Balanced")
+            break
+
+        top = st.pop()
+
+        if ch == ')' and top != '(':
+            print("Not Balanced")
+            break
+
+        if ch == '}' and top != '{':
+            print("Not Balanced")
+            break
+
+        if ch == ']' and top != '[':
+            print("Not Balanced")
+            break
+
+else:
+
+    if st.isEmpty():
+        print("Balanced")
+    else:
+        print("Not Balanced")
+
+        
 print("------------- Prefix to Postfix -------------")
 
 def isOperator(ch):

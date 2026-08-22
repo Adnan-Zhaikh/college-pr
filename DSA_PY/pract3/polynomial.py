@@ -30,6 +30,42 @@ class polynomial:
             current = current.next
         print()
 
+    # @title
+# Function to add two polynomials
+def addPolynomial(poly1, poly2):
+
+    result = polynomial()
+
+    first = poly1.head
+    second = poly2.head
+
+    while first is not None and second is not None:
+
+        if first.power == second.power:
+            result.append(first.coefficient + second.coefficient, first.power)
+            first = first.next
+            second = second.next
+
+        elif first.power > second.power:
+            result.append(first.coefficient, first.power)
+            first = first.next
+
+        else:
+            result.append(second.coefficient, second.power)
+            second = second.next
+
+    while first is not None:
+        result.append(first.coefficient, first.power)
+        first = first.next
+
+    while second is not None:
+        result.append(second.coefficient, second.power)
+        second = second.next
+
+    return result
+
+    
+
 p1 = polynomial()
 
 p1.append(5,3)
@@ -48,3 +84,6 @@ p1.display()
 print("Second Polynomial: ")
 p2.display()
 
+result = addPolynomial(p1, p2)
+print("\nResultant Polynomial:")
+result.display()
