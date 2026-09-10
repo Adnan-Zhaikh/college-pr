@@ -37,19 +37,19 @@ class Student:
       print(f"ID: {student.studentId} | Name: {student.studentName} | Elective : {student.selectedElective} ")
 
 
-adnan = Student("Adnan", "IOT")
-adnan.add_students()
-bilal = Student("Bilal", "IOT")
-bilal.add_students()
-alice = Student("Alice", "IOT")
-alice.add_students()
-tamanna = Student("Tamanna", "AI")
-tamanna.add_students()
+Nahid = Student("Nahid", "IOT")
+Nahid  .add_students()
+yusuf = Student("Yusuf", "ML")
+yusuf.add_students()
+ismail = Student("Ismail", "IOT")
+ismail.add_students()
+fareed = Student("Fareed", "AI")
+fareed.add_students()
 
 Student.display_database()
 
-adnan.update_elective( "AI")
+Nahid.update_elective( "AI")
 Student.display_database()
 
-print(adnan.remove_student())
+print(Nahid.remove_student())
 Student.display_database()
