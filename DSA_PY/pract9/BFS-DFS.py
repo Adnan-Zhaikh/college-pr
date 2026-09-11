@@ -27,7 +27,7 @@ graph = {
     3: [1, 2]
 }
 
-print("Breadth First Traversal:")
+print("\nBreadth First Traversal:")
 bfs(graph, 0)
 
 def dfs(graph, start):
@@ -61,5 +61,5 @@ graph = {
     3: [1, 2]
 }
 
-print("Depth First Traversal:")
+print("\nDepth First Traversal:")
 dfs(graph, 0)
