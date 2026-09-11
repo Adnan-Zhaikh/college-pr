@@ -5,7 +5,7 @@ import java.io.*;
 
 @WebServlet("/createSession")
 public class CreateSessionServlet extends HttpServlet {
-    protected void doGet(HttpServletRequest req, HttpServletResponse res)
+    protected void doPost(HttpServletRequest req, HttpServletResponse res)
             throws ServletException, IOException {
         String game = req.getParameter("game");
 
